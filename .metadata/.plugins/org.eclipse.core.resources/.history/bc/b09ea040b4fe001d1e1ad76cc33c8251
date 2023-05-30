@@ -1,0 +1,93 @@
+package domain;
+
+public class MemberVO {
+/*
+ * create table member(
+id varchar(30) not null,
+pw varchar(50) not null,
+name varchar(20) not null,
+email varchar(100) not null,
+phone varchar(30),
+regdate datetime default now(),
+event int not null,
+auth int default 0,
+Primary key(id));
+ */
+	private String id;
+	private String pw;
+	private String name;
+	private String email;
+	private String phone;
+	private String regdate;
+	private int event;
+	private int auth;
+	
+	public MemberVO() {}
+
+	
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getPw() {
+		return pw;
+	}
+
+	public void setPw(String pw) {
+		this.pw = pw;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	public String getRegdate() {
+		return regdate;
+	}
+
+	public void setRegdate(String regdate) {
+		this.regdate = regdate;
+	}
+
+	public int getEvent() {
+		return event;
+	}
+
+	public void setEvent(int event) {
+		this.event = event;
+	}
+
+	public int getAuth() {
+		return auth;
+	}
+
+	public void setAuth(int auth) {
+		this.auth = auth;
+	}
+	
+	
+}

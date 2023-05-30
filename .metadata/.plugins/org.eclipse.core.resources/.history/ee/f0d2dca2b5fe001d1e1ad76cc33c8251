@@ -1,0 +1,15 @@
+package repository;
+
+import org.apache.ibatis.session.SqlSession;
+
+import orm.DatabaseBuilder;
+
+public class MemberDAOImpl implements MemberDAO {
+	private SqlSession sql;
+	private String NS = "MemberMapper.";
+	
+	public MemberDAOImpl() {
+		new DatabaseBuilder();
+		sql = DatabaseBuilder.getFactory().openSession();
+	}
+}
